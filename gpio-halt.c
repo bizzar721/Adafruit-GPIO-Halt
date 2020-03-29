@@ -258,7 +258,7 @@ int main(int argc, char *argv[]) {
 			// Else timeout occurred
 		} else if(timeout == debounceTime) { // Button debounce timeout
 			if(pressed) {
-				(void)system("shutdown -h now");
+				(void)system("/home/pi/RetroPie/shutdown.sh");
 				running = 0;
 			}
 		}
